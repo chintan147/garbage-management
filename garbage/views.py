@@ -31,15 +31,17 @@ def RegisterData(request):
         msg = "*User already Exist"
         return render(request, "garbage/auth/signup.html", {'msg': msg})
     elif role == 'Admin':
-        admin = Admin.objects.create(
-            Name=name, Email=email, Password=passwd, Role=role)
-        admin.save()
+        
         subject = "Thanks for Registration"
         msg1 = f"Hello {name}\n Welcome to GoGreen,"
         from_email = settings.EMAIL_HOST_USER
         reception_list = []
         reception_list.append(email)
         send_mail(subject, msg1, from_email, reception_list)
+        
+        admin = Admin.objects.create(
+            Name=name, Email=email, Password=passwd, Role=role)
+        admin.save()
         # return render(request,"garbage/admin/admin_index.html")
         msg = "*Registration Successful!/n You can now Login"
         return render(request, "garbage/auth/login.html", {'msg': msg})
