@@ -53,16 +53,17 @@ def RegisterData(request):
         email = request.POST['email']
         passwd = request.POST['pass']
         otp = get_random_string(6, allowed_chars='0123456789')
-        admin = Admin.objects.create(
-            Name=name, Email=email, Password=passwd, Role=role)
-        user = User.objects.create(
-            User=admin, Name=name, Email=email, Password=passwd, Role=role, OTP=otp)
+       
         subject = "Thanks for Registration"
         msg1 = f"Hello {name}\n Welcome to GoGreen, Your OTP is: {otp}"
         from_email = settings.EMAIL_HOST_USER
         reception_list = []
         reception_list.append(email)
         send_mail(subject, msg1, from_email, reception_list)
+         admin = Admin.objects.create(
+            Name=name, Email=email, Password=passwd, Role=role)
+        user = User.objects.create(
+            User=admin, Name=name, Email=email, Password=passwd, Role=role, OTP=otp)
 
         msg = "*Registration Successful!" + '/n' + "You can now Login"
         return redirect('otp-page')
@@ -73,16 +74,17 @@ def RegisterData(request):
         name = request.POST['name']
         email = request.POST['email']
         passwd = request.POST['pass']
-        admin = Admin.objects.create(
-            Name=name, Email=email, Password=passwd, Role=role)
-        user = GarbageCollector.objects.create(
-            GC=admin, Name=name, Email=email, Password=passwd, Role=role)
+       
         subject = "Thanks for Registration"
         msg1 = f"Hello {name}\n Welcome to GoGreen,"
         from_email = settings.EMAIL_HOST_USER
         reception_list = []
         reception_list.append(email)
         send_mail(subject, msg1, from_email, reception_list)
+         admin = Admin.objects.create(
+            Name=name, Email=email, Password=passwd, Role=role)
+        user = GarbageCollector.objects.create(
+            GC=admin, Name=name, Email=email, Password=passwd, Role=role)
         msg = "*Registration Successful!/n You can now Login"
         return render(request, "garbage/auth/login.html", {'msg': msg})
         # return redirect('log-in')
