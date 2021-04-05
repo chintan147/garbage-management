@@ -1,0 +1,256 @@
+{% extends "garbage/base css.html" %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 04:12:49 GMT -->
+
+<head>
+	<title>GoGreen</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	{% block content %}
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline"
+				action="http://webdesign-finder.com/html/gogreen/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+
+
+			<section class="page_breadcrumbs ds parallax section_padding_top_65 section_padding_bottom_65">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="highlight">Contacts</h2>
+							<ol class="breadcrumb darklinks">
+								<li>
+									<a href="index.html">
+										Home
+									</a>
+								</li>
+								<!-- <li>
+									<a href="#">Pages</a>
+								</li> -->
+								<li class="active">Contacts</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_100 background_cover page_contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+							<div class="with_background transp_black_bg with_padding" style="color: blue;">
+
+								<form class="container" method="POST"
+									action="{% url 'send-message' pk=request.session.id %}"> {% csrf_token %}
+
+									<div class="col-sm-6">
+										<div class="">
+											<label for="name">Full Name
+												<span class="required">*</span>
+											</label>
+										<!-- 	<i class="fa fa-user highlight2" aria-hidden="true"></i> -->
+											<input type="text" aria-required="true" size="30" value="" name="name"
+												id="name" class="form-control" placeholder="Full Name">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="phone">Phone Number
+												<span class="required">*</span>
+											</label>
+											<!-- <i class="fa fa-phone highlight2" aria-hidden="true"></i> -->
+											<input type="text" aria-required="true" size="30" value="" name="phone"
+												id="phone" class="form-control" placeholder="Phone Number">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="email">Email address
+												<span class="required">*</span>
+											</label>
+											<!-- <i class="fa fa-envelope highlight2" aria-hidden="true"></i> -->
+											<input type="email" aria-required="true" size="30" value="" name="email"
+												id="email" class="form-control" placeholder="Email Address">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<label for="subject">Subject
+												<span class="required">*</span>
+											</label>
+											<!-- <i class="fa fa-flag highlight2" aria-hidden="true"></i> -->
+											<input type="text" aria-required="true" size="30" value="" name="subject"
+												id="subject" class="form-control" placeholder="Subject">
+										</div>
+									</div>
+									<div class="col-sm-12">
+
+										<div class="contact-form-message form-group">
+											<label for="message">Message</label>
+											<!-- <i class="fa fa-comment-o highlight2" aria-hidden="true"></i> -->
+											<textarea aria-required="true" rows="3" cols="45" name="message"
+												id="message" class="form-control" placeholder="Message"></textarea>
+										</div>
+									</div>
+
+									<div class="col-sm-12 bottommargin_0">
+
+										<div class="contact-form-submit topmargin_10">
+											<button type="submit"
+												class="theme_button color2 wide_button margin_0">Send message</button>
+										</div>
+									</div>
+
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section class="cs main_color2 section_padding_top_30 section_padding_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">01 123 456 789</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">140 Horizon Circle, San Diego,
+										CA</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-clock-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Open Hours</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">Weekdays 8.00-18.00, Sat:
+										closed</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-comment-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Online Support</span>
+									<br>
+									<span class="small-text small-spacing lightgrey"> gogreen@support.com</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+
+
+
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	{% endblock%}
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+	<!-- Google Map Script -->
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+</body>
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 04:12:49 GMT -->
+
+</html>

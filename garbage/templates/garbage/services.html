@@ -1,0 +1,401 @@
+{% extends "garbage/base css.html" %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 04:12:35 GMT -->
+
+<head>
+	<title>GoGreen</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	<style>
+		.button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 12px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	{% block content %}
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline"
+				action="http://webdesign-finder.com/html/gogreen/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+						id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+
+
+
+
+			<section class="page_breadcrumbs ds parallax section_padding_top_65 section_padding_bottom_65">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="highlight">Services</h2>
+							<ol class="breadcrumb darklinks">
+								<li>
+									<a href="{% url 'index' %}">
+										Home
+									</a>
+								</li>
+								<!-- <li>
+									<a href="#">Pages</a>
+								</li> -->
+								<li class="active">Services</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_top_100 section_padding_bottom_100">
+				<div class="container">
+					<div class="row topmargin_30 columns_margin_bottom_20">
+						<div class="col-md-4 col-sm-6">
+							<article
+								class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/09.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Hard Drive, Flash Drive &amp; SSD Destruction</a>
+									</h4>
+									<p class="margin_0">
+										Clients can simply schedule their hard drive destruction online and through our
+										website.
+									</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<article
+								class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/10.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Electronic Waste Collection &amp; Recycling</a>
+									</h4>
+									<p class="margin_0">
+										Users quickly replace their electronic devices with newer, faster &amp; stronger
+										gadgets on the market.
+									</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<article
+								class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/03.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Electronics &amp; Computer Resale</a>
+									</h4>
+									<p class="margin_0">
+										Buyers are welcome to leave their best offer on available electronic products.
+									</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<!-- <div class="col-md-4 col-sm-6">
+							<article
+								class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/02.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Flank Picanha Ribeye &amp; Pork Belly Meatball</a>
+									</h4>
+									<p class="margin_0">
+										Tail sausage alcatra t-bone jerky beef spare ribs kielbasa ham doner filet
+										mignon tenderloin tongue.
+									</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<article
+								class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/12.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Swine Biltong Mignon &amp; Leberkas </a>
+									</h4>
+									<p class="margin_0">
+										Sausage shank brisket jowl short ribs pancetta salami beef, strip steak meatball
+										pastrami pork chuck.
+									</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<article
+								class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/11.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Ribeye Kielbasa &amp; Leberkas Turducken
+											Landjaeger </a>
+									</h4>
+									<p class="margin_0">
+										Turkey ball tip rump, alcatra swine bresaola jerky. Cow andouille alcatra, pork
+										loin capicola.
+									</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			{% endblock %}
+
+			<footer class="page_footer ds section_padding_top_100 section_padding_bottom_65 columns_padding_25">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-4 col-sm-12 text-center">
+							<div class="widget">
+								<a href="index.html" class="logo bg_logo bottommargin_25">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="big">GoGreen</span>
+										<span class="small-text">Recycling</span>
+									</span>
+								</a>
+								<p>
+									Family-owned company from San Diego proudly serving individuals and businesses in
+									Southern California.
+								</p>
+								<div class="line-height-thin">
+									<div class="media small-teaser inline-block margin_0">
+										<div class="media-left media-middle">
+											<i class="fa fa-map-marker highlight2" aria-hidden="true"></i>
+										</div>
+										<div class="media-body media-middle grey">
+											140 Horizon Circle, San Diego, CA
+										</div>
+									</div>
+									<br>
+									<div class="media small-teaser inline-block margin_0">
+										<div class="media-left media-middle">
+											<i class="fa fa-phone highlight2" aria-hidden="true"></i>
+										</div>
+										<div class="media-body media-middle grey">
+											01 123 456 789
+										</div>
+									</div>
+									<br>
+									<div class="media small-teaser inline-block margin_0">
+										<div class="media-left media-middle">
+											<i class="fa fa-map-marker highlight2" aria-hidden="true"></i>
+										</div>
+										<div class="media-body media-middle highlightlinks">
+											<a href="#">gogreen@support.com</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="darklinks topmargin_20">
+									<a href="#" class="social-icon border-icon rounded-icon soc-facebook"></a>
+									<a href="#" class="social-icon border-icon rounded-icon soc-twitter"></a>
+									<a href="#" class="social-icon border-icon rounded-icon soc-google"></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 text-center">
+							<div class="widget widget_contact topmargin_10">
+								<h3>Contact Form</h3>
+								<form class="contact-form topmargin_45" method="post"
+									action="http://webdesign-finder.com/html/gogreen/">
+									<p class="contact-form-name">
+										<label for="footer-name">Name <span class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="name"
+											id="footer-name" class="form-control text-center" placeholder="Full Name">
+									</p>
+									<p class="contact-form-email">
+										<label for="footer-email">Email <span class="required">*</span></label>
+										<input type="email" aria-required="true" size="30" value="" name="email"
+											id="footer-email" class="form-control text-center"
+											placeholder="Email Address">
+									</p>
+									<p class="contact-form-message">
+										<label for="footer-message">Message</label>
+										<textarea aria-required="true" rows="3" cols="45" name="message"
+											id="footer-message" class="form-control text-center"
+											placeholder="Message"></textarea>
+									</p>
+									<p class="footer_contact-form-submit topmargin_30">
+										<button type="submit" id="footer_contact_form_submit" name="contact_submit"
+											class="theme_button color1 wide_button">Send Message</button>
+									</p>
+								</form>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 text-center">
+
+							<div class="widget widget_recent_entries topmargin_10">
+
+								<h3 class="widget-title">Recent News</h3>
+								<ul class="greylinks">
+									<li>
+										<p class="margin_0">
+											<a href="blog-single-right.html">
+												At vero eos et accusam et justo duo dolores et ea rebum clita kasd
+											</a>
+										</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+												March 9, 2017
+											</time>
+										</span>
+									</li>
+									<li>
+										<p class="margin_0">
+											<a href="blog-single-right.html">
+												Gubergren, no sea takimata sanctus est lorem ipsum dolor sit amet
+											</a>
+										</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+												March 9, 2017
+											</time>
+										</span>
+									</li>
+									<li>
+										<p class="margin_0">
+											<a href="blog-single-right.html">
+												Lorem ipsum dolor sit amet, consetetur
+											</a>
+										</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+												March 9, 2017
+											</time>
+										</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<section class="ls page_copyright section_padding_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text small-spacing grey">&copy; Copyright 2017 All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+</body>
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 04:12:35 GMT -->
+
+</html>

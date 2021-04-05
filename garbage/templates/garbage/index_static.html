@@ -1,0 +1,1537 @@
+{% include "garbage/base.html" %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/index_static.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 04:11:46 GMT -->
+<head>
+	<title>GoGreen</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="http://webdesign-finder.com/html/gogreen/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline cs two_color section_padding_top_5 section_padding_bottom_5 table_section">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6 text-center text-sm-left">
+							<p class="divided-content">
+					<span class="medium black">
+						Welcome to Electronics Recycling
+					</span>
+					<a href="#">How to Find Us</a>
+					<a href="#">Give Feedback</a>
+				</p>
+						</div>
+						<div class="col-sm-6 text-center text-sm-right">
+
+							<div class="widget widget_search">
+								<form method="get" class="searchform form-inline" action="http://webdesign-finder.com/html/gogreen/">
+									<div class="form-group-wrap">
+										<div class="form-group margin_0">
+											<label class="sr-only" for="topline-search">Search for:</label>
+											<input id="topline-search" type="text" value="" name="search" class="form-control" placeholder="Search Keyword">
+										</div>
+										<button type="submit" class="theme_button">Search</button>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_white toggler_xs_right section_padding_20">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell">
+								<a href="index.html" class="logo top_logo">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="big">GoGreen</span>
+										<span class="small-text">Recycling</span>
+									</span>
+								</a>
+							</div>
+
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active">
+											<a href="index-2.html">Home</a>
+											<ul>
+												<li>
+													<a href="index-2.html">MultiPage</a>
+												</li>
+												<li>
+													<a href="index_static.html">Static Intro</a>
+												</li>
+												<li>
+													<a href="index_singlepage.html">Single Page</a>
+												</li>
+												<li>
+													<a href="admin_index.html">Admin Dashboard</a>
+												</li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="about.html">Pages</a>
+											<ul>
+												<!-- features -->
+												<li>
+													<a href="shortcodes_teasers.html">Shortcodes &amp; Widgets</a>
+													<ul>
+														<li>
+															<a href="shortcodes_typography.html">Typography</a>
+														</li>
+														<li>
+															<a href="shortcodes_buttons.html">Buttons</a>
+														</li>
+														<li>
+															<a href="shortcodes_teasers.html">Teasers</a>
+														</li>
+														<li>
+															<a href="shortcodes_progress.html">Progress</a>
+														</li>
+														<li>
+															<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+														</li>
+														<li>
+															<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+														</li>
+														<li>
+															<a href="shortcodes_widgets.html">Widgets</a>
+														</li>
+														<li>
+															<a href="shortcodes_animation.html">Animation</a>
+														</li>
+														<li>
+															<a href="shortcodes_icons.html">Template Icons</a>
+														</li>
+														<li>
+															<a href="shortcodes_socialicons.html">Social Icons</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof features -->
+
+												<li>
+													<a href="about.html">About</a>
+												</li>
+
+												<!-- shop -->
+												<li>
+													<a href="shop-right.html">Shop</a>
+													<ul>
+														<li>
+															<a href="shop-right.html">Shop</a>
+														</li>
+														<li>
+															<a href="shop-product-right.html">Single Product</a>
+														</li>
+														<li>
+															<a href="shop-cart-right.html">Shopping Cart</a>
+														</li>
+														<li>
+															<a href="shop-checkout-right.html">Checkout</a>
+														</li>
+														<li>
+															<a href="shop-register.html">Registration</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof shop -->
+
+												<li>
+													<a href="timetable.html">Timetable</a>
+												</li>
+
+												<!-- events -->
+												<li>
+													<a href="events-left.html">Events</a>
+													<ul>
+														<li>
+															<a href="events-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="events-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="events-full.html">Full Width</a>
+														</li>
+														<li>
+															<a href="event-single-left.html">Single Event</a>
+															<ul>
+																<li>
+																	<a href="event-single-left.html">Left Sidebar</a>
+																</li>
+																<li>
+																	<a href="event-single-right.html">Right Sidebar</a>
+																</li>
+																<li>
+																	<a href="event-single-full.html">Full Width</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<!-- eof events -->
+
+												<li>
+													<a href="team.html">Team</a>
+													<ul>
+														<li>
+															<a href="team.html">Team 1</a>
+														</li>
+														<li>
+															<a href="team2.html">Team 2</a>
+														</li>
+														<li>
+															<a href="team-single.html">Team Member</a>
+														</li>
+													</ul>
+												</li>
+
+												<li>
+													<a href="services.html">Services</a>
+													<ul>
+														<li>
+															<a href="services.html">Services</a>
+														</li>
+														<li>
+															<a href="service-single.html">Single Service</a>
+														</li>
+													</ul>
+												</li>
+
+												<li>
+													<a href="comingsoon1.html">Comingsoon</a>
+													<ul>
+														<li>
+															<a href="comingsoon1.html">Comingsoon</a>
+														</li>
+														<li>
+															<a href="comingsoon2.html">Comingsoon 2</a>
+														</li>
+													</ul>
+												</li>
+
+												<li>
+													<a href="faq.html">FAQ</a>
+													<ul>
+														<li>
+															<a href="faq.html">FAQ</a>
+														</li>
+														<li>
+															<a href="faq2.html">FAQ 2</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="404.html">404</a>
+													<ul>
+														<li>
+															<a href="404.html">404</a>
+														</li>
+														<li>
+															<a href="4042.html">404 2</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</li>
+										<!-- eof pages -->
+
+										<li>
+											<a href="#">Features</a>
+											<div class="mega-menu">
+												<ul class="mega-menu-row">
+													<li class="mega-menu-col">
+														<a href="#">Headers</a>
+														<ul>
+															<li>
+																<a href="header1.html">Header Type 1</a>
+															</li>
+															<li>
+																<a href="header2.html">Header Type 2</a>
+															</li>
+															<li>
+																<a href="header3.html">Header Type 3</a>
+															</li>
+															<li>
+																<a href="header4.html">Header Type 4</a>
+															</li>
+															<li>
+																<a href="header5.html">Header Type 5</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="#">Side Menus</a>
+														<ul>
+															<li>
+																<a href="header_side1.html">Slide Left Light</a>
+															</li>
+															<li>
+																<a href="header_side2.html">Slide Right Light</a>
+															</li>
+															<li>
+																<a href="header_side3.html">Push Left Light</a>
+															</li>
+															<li>
+																<a href="header_side4.html">Push Right Light</a>
+															</li>
+															<li>
+																<a href="header_side5.html">Slide Left Dark</a>
+															</li>
+															<li>
+																<a href="header_side6.html">Slide Right Dark</a>
+															</li>
+															<li>
+																<a href="header_side7.html">Push Left Dark</a>
+															</li>
+															<li>
+																<a href="header_side8.html">Push Right Dark</a>
+															</li>
+															<li>
+																<a href="header_side_superfish.html">Superfish Menu</a>
+															</li>
+															<li>
+																<a href="header_side_sticked.html">Sticked Menu</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="breadcrumbs1.html">Breadcrumbs</a>
+														<ul>
+															<li>
+																<a href="breadcrumbs1.html">Breadcrumbs 1</a>
+															</li>
+															<li>
+																<a href="breadcrumbs2.html">Breadcrumbs 2</a>
+															</li>
+															<li>
+																<a href="breadcrumbs3.html">Breadcrumbs 3</a>
+															</li>
+															<li>
+																<a href="breadcrumbs4.html">Breadcrumbs 4</a>
+															</li>
+															<li>
+																<a href="breadcrumbs5.html">Breadcrumbs 5</a>
+															</li>
+															<li>
+																<a href="breadcrumbs6.html">Breadcrumbs 6</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="footer1.html">Footers</a>
+														<ul>
+															<li>
+																<a href="footer1.html">Footer Type 1</a>
+															</li>
+															<li>
+																<a href="footer2.html">Footer Type 2</a>
+															</li>
+															<li>
+																<a href="footer3.html">Footer Type 3</a>
+															</li>
+															<li>
+																<a href="footer4.html">Footer Type 4</a>
+															</li>
+															<li>
+																<a href="footer5.html">Footer Type 5</a>
+															</li>
+															<li>
+																<a href="footer6.html">Footer Type 6</a>
+															</li>
+															<li>
+																<a href="footer7.html">Footer Type 7</a>
+															</li>
+														</ul>
+													</li>
+													<li class="mega-menu-col">
+														<a href="copyright1.html">Copyrights</a>
+
+														<ul>
+															<li>
+																<a href="copyright1.html">Copyrights 1</a>
+															</li>
+															<li>
+																<a href="copyright2.html">Copyrights 2</a>
+															</li>
+															<li>
+																<a href="copyright3.html">Copyrights 3</a>
+															</li>
+															<li>
+																<a href="copyright4.html">Copyrights 4</a>
+															</li>
+															<li>
+																<a href="copyright5.html">Copyrights 5</a>
+															</li>
+														</ul>
+													</li>
+
+												</ul>
+											</div>
+											<!-- eof mega menu -->
+										</li>
+										<!-- eof features -->
+
+
+										<!-- gallery -->
+										<li>
+											<a href="gallery-regular.html">Gallery</a>
+											<ul>
+												<!-- Gallery regular -->
+												<li>
+													<a href="gallery-regular.html">Gallery Regular</a>
+													<ul>
+														<li>
+															<a href="gallery-regular.html">1 column</a>
+														</li>
+														<li>
+															<a href="gallery-regular-2-cols.html">2 columns</a>
+														</li>
+														<li>
+															<a href="gallery-regular-3-cols.html">3 columns</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery regular -->
+
+												<!-- Gallery full width -->
+												<li>
+													<a href="gallery-fullwidth.html">Gallery Full Width</a>
+													<ul>
+														<li>
+															<a href="gallery-fullwidth.html">2 column</a>
+														</li>
+														<li>
+															<a href="gallery-fullwidth-3-cols.html">3 columns</a>
+														</li>
+														<li>
+															<a href="gallery-fullwidth-4-cols.html">4 columns</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery full width -->
+
+												<!-- Gallery extended -->
+												<li>
+													<a href="gallery-extended.html">Gallery Extended</a>
+													<ul>
+														<li>
+															<a href="gallery-extended.html">1 column</a>
+														</li>
+														<li>
+															<a href="gallery-extended-2-cols.html">2 columns</a>
+														</li>
+														<li>
+															<a href="gallery-extended-3-cols.html">3 columns</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery extended -->
+
+												<!-- Gallery carousel -->
+												<li>
+													<a href="gallery-carousel.html">Gallery Carousel</a>
+													<ul>
+														<li>
+															<a href="gallery-carousel.html">1 column</a>
+														</li>
+														<li>
+															<a href="gallery-carousel-2-cols.html">2 columns</a>
+														</li>
+														<li>
+															<a href="gallery-carousel-3-cols.html">3 columns</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery carousel -->
+
+												<!-- Gallery tile -->
+												<li>
+													<a href="gallery-tile.html">Gallery Tile</a>
+												</li>
+												<!-- eof Gallery tile -->
+
+												<!-- Gallery left sidebar -->
+												<li>
+													<a href="gallery-left.html">Gallery Left Sidebar</a>
+													<ul>
+														<li>
+															<a href="gallery-left.html">1 column</a>
+														</li>
+														<li>
+															<a href="gallery-left-2-cols.html">2 columns</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery left sidebar -->
+
+												<!-- Gallery right sidebar -->
+												<li>
+													<a href="gallery-right.html">Gallery Right Sidebar</a>
+													<ul>
+														<li>
+															<a href="gallery-right.html">1 column</a>
+														</li>
+														<li>
+															<a href="gallery-right-2-cols.html">2 columns</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery right sidebar -->
+
+												<!-- Gallery item -->
+												<li>
+													<a href="gallery-single.html">Gallery Item</a>
+													<ul>
+														<li>
+															<a href="gallery-single.html">Style 1</a>
+														</li>
+														<li>
+															<a href="gallery-single2.html">Style 2</a>
+														</li>
+														<li>
+															<a href="gallery-single3.html">Style 3</a>
+														</li>
+													</ul>
+												</li>
+												<!-- eof Gallery item -->
+											</ul>
+										</li>
+										<!-- eof Gallery -->
+
+										<!-- blog -->
+										<li>
+											<a href="blog-right.html">Blog</a>
+											<ul>
+
+												<li>
+													<a href="blog-right.html">Right Sidebar</a>
+												</li>
+												<li>
+													<a href="blog-left.html">Left Sidebar</a>
+												</li>
+												<li>
+													<a href="blog-full.html">No Sidebar</a>
+												</li>
+												<li>
+													<a href="blog-mosaic.html">Blog Grid</a>
+												</li>
+
+												<li>
+													<a href="blog-single-right.html">Post</a>
+													<ul>
+														<li>
+															<a href="blog-single-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="blog-single-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="blog-single-full.html">No Sidebar</a>
+														</li>
+													</ul>
+												</li>
+
+												<li>
+													<a href="blog-single-video-right.html">Video Post</a>
+													<ul>
+														<li>
+															<a href="blog-single-video-right.html">Right Sidebar</a>
+														</li>
+														<li>
+															<a href="blog-single-video-left.html">Left Sidebar</a>
+														</li>
+														<li>
+															<a href="blog-single-video-full.html">No Sidebar</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</li>
+										<!-- eof blog -->
+
+										<!-- contacts -->
+										<li>
+											<a href="contact.html">Contact</a>
+											<ul>
+												<li>
+													<a href="contact.html">Contact 1</a>
+												</li>
+												<li>
+													<a href="contact2.html">Contact 2</a>
+												</li>
+												<li>
+													<a href="contact3.html">Contact 3</a>
+												</li>
+												<li>
+													<a href="contact4.html">Contact 4</a>
+												</li>
+											</ul>
+										</li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler -->
+								<span class="toggle_menu">
+									<span></span>
+								</span>
+							</div>
+
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<div class="darklinks">
+									<a href="#" class="social-icon border-icon rounded-icon soc-facebook"></a>
+									<a href="#" class="social-icon border-icon rounded-icon soc-twitter"></a>
+									<a href="#" class="social-icon border-icon rounded-icon soc-google"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="ds section_padding_top_15 section_padding_bottom_15 table_section section_bottom_overlap">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-9 col-sm-8 text-center text-sm-left">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium grey">01 123 456 789</span>
+									<br>
+									<span class="small-text small-spacing">140 Horizon Circle, San Diego, CA</span>
+								</div>
+							</div>
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium grey">Open Hours</span>
+									<br>
+									<span class="small-text small-spacing">Weekdays 8.00-18.00, Sat: closed</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 text-center text-sm-right">
+							<a href="#" class="theme_button color2 margin_0">Schedule pickup</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="intro_section ds">
+				<img src="images/slide03.jpg" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="slide_description_wrapper">
+								<div class="slide_description">
+									<div class="intro-layer to_animate" data-animation="fadeInUp">
+										<h3 class="highlight text-uppercase">
+											Circular
+										</h3>
+									</div>
+									<div class="intro-layer to_animate" data-animation="fadeInUp">
+										<h2 class="text-uppercase">
+											Economy
+										</h2>
+									</div>
+									<div class="intro-layer to_animate" data-animation="fadeInUp">
+										<p>We can solve your corporate IT disposition needs quickly and professionally.<br> Save Your community, Save Your planet</p>
+										<a href="gallery-extended-2-cols.html" class="theme_button color1">contact us</a>
+									</div>
+								</div>
+								<!-- eof .slide_description -->
+							</div>
+							<!-- eof .slide_description_wrapper -->
+						</div>
+						<!-- eof .col-* -->
+					</div>
+					<!-- eof .row -->
+				</div>
+				<!-- eof .container -->
+			</section>
+
+			<section id="about" class="ls section_padding_top_100 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+							<h2 class="section_header with_icon">
+								Welcome to GoGreen
+							</h2>
+							<p class="small-text grey">More About Us</p>
+							<p class="bottommargin_30">
+					GoGreen is a Family-owned company located in San Diego, California proudly serving individuals and businesses in Southern California with their computers and electronics upgrade needs, accepting computers and electronics waste in any conditions.
+				</p>
+							<img src="images/signature.png" alt="" />
+						</div>
+					</div>
+					<div class="row topmargin_40 columns_margin_top_60">
+						<div class="col-md-4">
+							<div class="teaser with_border rounded text-center">
+								<div class="teaser_icon main_bg_color2 round size_small offset_icon">
+									<i class="fa fa-leaf"></i>
+								</div>
+								<h4 class="poppins hover-color2">
+									<a href="#">Corporate Services</a>
+								</h4>
+								<p>
+						Guaranteed that all of your universal waste management is performed safely and responsibly.
+					</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="teaser with_border rounded text-center">
+								<div class="teaser_icon main_bg_color3 round size_small offset_icon">
+									<i class="fa fa-inbox"></i>
+								</div>
+								<h4 class="poppins hover-color3">
+									<a href="#">Convenient Pickup</a>
+								</h4>
+								<p>
+						We offer business pickup services to safely recycle your electronics in a safe manner.
+					</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="teaser with_border rounded text-center">
+								<div class="teaser_icon main_bg_color round size_small offset_icon">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<h4 class="poppins">
+									<a href="#">E-waste Events</a>
+								</h4>
+								<p>
+						We work with non-profits, businesses, and other organizations to host community e-waste events.
+					</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="pickup" class="ds page_contact parallax section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">
+								Schedule Pickup
+							</h2>
+							<p class="small-text">For old equipment</p>
+
+							<form class="contact-form row columns_margin_bottom_20" method="post" action="http://webdesign-finder.com/html/gogreen/">
+
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="pickup-name">Full Name
+											<span class="required">*</span>
+										</label>
+										<i class="fa fa-user highlight2" aria-hidden="true"></i>
+										<input type="text" aria-required="true" size="30" value="" name="name" id="pickup-name" class="form-control" placeholder="Full Name">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="pickup-phone">Phone Number
+											<span class="required">*</span>
+										</label>
+										<i class="fa fa-phone highlight2" aria-hidden="true"></i>
+										<input type="text" aria-required="true" size="30" value="" name="phone" id="pickup-phone" class="form-control" placeholder="Phone Number">
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group select-group">
+										<label for="pickup-date">Date
+											<span class="required">*</span>
+										</label>
+										<i class="fa fa-calendar highlight2" aria-hidden="true"></i>
+										<select aria-required="true" id="pickup-date" name="date" class="choice empty form-control">
+											<option value="" disabled selected data-default>Date</option>
+											<option value="1306">13.06</option>
+											<option value="1406">14.06</option>
+											<option value="1506">15.06</option>
+											<option value="1606">16.06</option>
+											<option value="1706">17.06</option>
+											<option value="1806">18.06</option>
+											<option value="1906">19.06</option>
+											<option value="2006">20.06</option>
+										</select>
+										<i class="fa fa-angle-down theme_button" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="form-group select-group">
+										<label for="pickup-time">Time
+											<span class="required">*</span>
+										</label>
+										<i class="fa fa-calendar highlight2" aria-hidden="true"></i>
+										<select aria-required="true" id="pickup-time" name="time" class="choice empty form-control">
+											<option value="" disabled selected data-default>Time</option>
+											<option value="08am">8:00 AM</option>
+											<option value="09am">9:00 AM</option>
+											<option value="10am">10:00 AM</option>
+											<option value="11am">11:00 AM</option>
+											<option value="12am">12:00 PM</option>
+											<option value="13pm">13:00 PM</option>
+											<option value="14pm">14:00 PM</option>
+											<option value="15pm">15:00 PM</option>
+											<option value="16pm">16:00 PM</option>
+											<option value="17pm">17:00 PM</option>
+										</select>
+										<i class="fa fa-angle-down theme_button" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-sm-12">
+
+									<div class="form-group">
+										<label for="pickup-message">Message</label>
+										<i class="fa fa-comment-o highlight2" aria-hidden="true"></i>
+										<textarea aria-required="true" rows="3" cols="45" name="message" id="pickup-message" class="form-control" placeholder="Message"></textarea>
+									</div>
+								</div>
+
+								<div class="col-sm-12">
+
+									<div class="contact-form-submit topmargin_20">
+										<button type="submit" id="pickup-_submit" name="contact_submit" class="theme_button color1">Order pickup</button>
+									</div>
+								</div>
+
+
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls ms section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">
+								Our Services
+							</h2>
+							<p class="small-text grey">What we do</p>
+						</div>
+					</div>
+					<div class="row columns_margin_bottom_20">
+						<div class="col-md-4 col-sm-6">
+							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/09.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Hard Drive, Flash Drive &amp; SSD Destruction</a>
+									</h4>
+									<p class="margin_0">
+							Clients can simply schedule their hard drive destruction online and through our website.
+						</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/10.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Electronic Waste Collection &amp; Recycling</a>
+									</h4>
+									<p class="margin_0">
+							Users quickly replace their electronic devices with newer, faster &amp; stronger gadgets on the market.
+						</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/03.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="service-single.html">Electronics &amp; Computer Resale</a>
+									</h4>
+									<p class="margin_0">
+							Buyers are welcome to leave their best offer on available electronic products.
+						</p>
+									<a href="service-single.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="row topmargin_30">
+						<div class="col-sm-12 text-center">
+							<a href="services.html" class="theme_button wide_button color1">All services</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls overflow_hidden half_section section_padding_top_100 section_padding_bottom_150 columns_padding_80">
+				<div class="image_cover image_cover_left">
+					<!-- you can put your image here instead of puting it in column-->
+					<!-- <img src="img/parallax/half_image.jpg" alt=""> -->
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="img/parallax/half_image.jpg" alt="">
+						</div>
+						<!-- .col-* -->
+						<div class="col-md-6">
+
+							<h2 class="section_header with_icon">
+								Our Mission
+							</h2>
+							<p class="small-text grey">About us</p>
+
+							<p>
+					Our mission is to keep as much electronic waste from ending up in local landfills as we can
+				</p>
+
+							<div class="panel-group" id="accordion1">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+												<i class="fa fa-envelope"></i>
+												Reducing waste
+											</a>
+										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in">
+										<div class="panel-body">
+											Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum dolor sit amet ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse2" class="collapsed">
+												<i class="fa fa-envelope"></i>
+												Reduce program
+											</a>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+										<div class="panel-body">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere doloremque ut dolores laudantium nihil at, repudiandae est numquam fuga tempora totam sequi quidem saepe officiis sint beatae, magni fugit.
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion1" href="#collapse3" class="collapsed">
+												<i class="fa fa-envelope"></i>
+												recycle more
+											</a>
+										</h4>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse">
+										<div class="panel-body">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. At nobis omnis delectus, asperiores quo obcaecati et iste corporis necessitatibus tempora aspernatur doloribus. Ut deleniti commodi dicta distinctio sit enim quidem!
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- .col-* -->
+
+
+					</div>
+				</div>
+
+			</section>
+
+
+			<section class="ls ms section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">
+								Faq
+							</h2>
+							<p class="small-text grey bottommargin_0">Frequently asked qaestions</p>
+						</div>
+					</div>
+					<div class="row columns_margin_top_60">
+						<div class="col-md-4">
+							<div class="teaser with_background rounded text-center">
+								<div class="teaser_icon main_bg_color2 round offset_icon fontsize_30">
+									<h3 class="margin_0">?</h3>
+								</div>
+								<h4 class="poppins">
+									Consetetur sadipscing elitr, sed diam nonumy?
+								</h4>
+								<p>
+						Lorem ipsum dolamet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+					</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="teaser with_background rounded text-center">
+								<div class="teaser_icon main_bg_color3 round offset_icon fontsize_30">
+									<h3 class="margin_0">?</h3>
+								</div>
+								<h4 class="poppins">
+									Eirmod tempor invidunt ut labore et?
+								</h4>
+								<p>
+						Invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+					</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="teaser with_background rounded text-center">
+								<div class="teaser_icon main_bg_color round offset_icon fontsize_30">
+									<h3 class="margin_0">?</h3>
+								</div>
+								<h4 class="poppins">
+									Dolore magna aquyam erat, sed diam voluptua?
+								</h4>
+								<p>
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+							</div>
+						</div>
+					</div>
+					<div class="row topmargin_30">
+						<div class="col-sm-12 text-center">
+							<a href="faq.html" class="theme_button color1 wide_button">to faq page</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="reviews" class="ls section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 text-center">
+							<h2 class="section_header with_icon">
+								Testimonials
+							</h2>
+							<p class="small-text grey">what clients say</p>
+
+							<div class="owl-carousel" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-dots="true">
+
+								<blockquote class="with_quotes text-center">
+									<img src="images/team/02.jpg" alt="" /> I felt really comfortable and trust them. They have a lot of security measures in place. Pretty cheap for such great peace of mind!
+									<div class="item-meta">
+										<h4 class="poppins margin_0">Gregory Rondeau</h4>
+										<p class="small-text">Director</p>
+									</div>
+								</blockquote>
+
+								<blockquote class="with_quotes text-center">
+									<img src="images/team/05.jpg" alt="" /> I felt really comfortable and trust them. They have a lot of security measures in place. Pretty cheap for such great peace of mind!
+									<div class="item-meta">
+										<h4 class="poppins margin_0">Lamar Owens</h4>
+										<p class="small-text">CEO</p>
+									</div>
+								</blockquote>
+
+								<blockquote class="with_quotes text-center">
+									<img src="images/team/07.jpg" alt="" /> I felt really comfortable and trust them. They have a lot of security measures in place. Pretty cheap for such great peace of mind!
+									<div class="item-meta">
+										<h4 class="poppins margin_0">Robert Wade</h4>
+										<p class="small-text">Designer</p>
+									</div>
+								</blockquote>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls ms section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header with_icon">
+								Latest News
+							</h2>
+							<p class="small-text grey">Blog Posts</p>
+						</div>
+					</div>
+					<div class="row columns_margin_bottom_20">
+						<div class="col-md-4 col-sm-6">
+							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/05.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="blog-single-left.html">The importance of disposing electronic waste</a>
+									</h4>
+									<p class="margin_0">
+							Clients can simply schedule their hard drive destruction online and through our website.
+						</p>
+									<a href="blog-single-left.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/07.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="blog-single-left.html">We pickup ewaste from businesses for free</a>
+									</h4>
+									<p class="margin_0">
+							Users quickly replace their electronic devices with newer, faster &amp; stronger gadgets on the market.
+						</p>
+									<a href="blog-single-left.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+							<article class="vertical-item content-padding with_background text-center rounded overflow-hidden">
+								<div class="item-media">
+									<img src="images/gallery/06.jpg" alt="">
+								</div>
+								<div class="item-content">
+									<h4 class="entry-title">
+										<a href="blog-single-left.html">Electronics &amp; Computer Resale</a>
+									</h4>
+									<p class="margin_0">
+							Buyers are welcome to leave their best offer on available electronic products.
+						</p>
+									<a href="blog-single-left.html" class="read-more"></a>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="row topmargin_30">
+						<div class="col-sm-12 text-center">
+							<a href="blog-left.html" class="theme_button wide_button color1">Our blog</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cs main_color2 section_padding_top_30 section_padding_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-phone"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">01 123 456 789</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">140 Horizon Circle, San Diego, CA</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="media small-teaser teaser inline-block">
+								<div class="media-left media-middle">
+									<div class="teaser_icon light_bg_color big_bg highlight2 round size_xsmall">
+										<i class="fa fa-clock-o"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<span class="fontsize_20 medium black">Open Hours</span>
+									<br>
+									<span class="small-text small-spacing lightgrey">Weekdays 8.00-18.00, Sat: closed</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
+							<div class="widget widget_mailchimp">
+								<form class="signup topmargin_10" action="http://webdesign-finder.com/html/gogreen/" method="get">
+									<!-- <div class="form-group-wrap"> -->
+									<div class="form-group margin_0">
+										<input class="mailchimp_email form-control" name="email" type="email" placeholder="Email Address">
+									</div>
+									<button type="submit" class="theme_button">Sign Up!</button>
+									<!-- </div> -->
+									<div class="response"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls page_map" data-address="Western Union, 393 Front St, Hempstead, NY 11550, USA">
+				<!-- marker description and marker icon goes here -->
+				<div class="map_marker_description">
+					<h3>Map Title</h3>
+					<p>Map description text</p>
+					<img class="map_marker_icon" src="images/map_marker_icon.png" alt="">
+				</div>
+			</section>
+
+			<section class="ls">
+				<div class="owl-carousel" data-responsive-xlg="8" data-responsive-lg="8" data-responsive-md="5" data-responsive-sm="3" data-responsive-xs="2" data-loop="true" data-margin="0" data-nav="true">
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/01.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/01.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/02.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/02.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/03.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/03.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/04.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/04.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/05.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/05.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/06.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/06.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/07.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/07.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/08.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/08.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/09.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/09.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/10.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/10.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/11.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/11.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="vertical-item content-absolute corporate consulting">
+						<div class="item-media">
+							<img src="images/gallery_square/12.jpg" alt="">
+							<div class="media-links">
+								<a class="abs-link prettyPhoto" data-gal="prettyPhoto[gal]" title="" href="images/gallery/12.jpg"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<footer class="page_footer ds section_padding_top_100 section_padding_bottom_65 columns_padding_25">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-4 col-sm-12 text-center">
+							<div class="widget">
+								<a href="index.html" class="logo bg_logo bottommargin_25">
+									<img src="images/logo.png" alt="">
+									<span class="logo_text">
+										<span class="big">GoGreen</span>
+										<span class="small-text">Recycling</span>
+									</span>
+								</a>
+								<p>
+						Family-owned company from San Diego proudly serving individuals and businesses in Southern California.
+					</p>
+								<div class="line-height-thin">
+									<div class="media small-teaser inline-block margin_0">
+										<div class="media-left media-middle">
+											<i class="fa fa-map-marker highlight2" aria-hidden="true"></i>
+										</div>
+										<div class="media-body media-middle grey">
+											140 Horizon Circle, San Diego, CA
+										</div>
+									</div>
+									<br>
+									<div class="media small-teaser inline-block margin_0">
+										<div class="media-left media-middle">
+											<i class="fa fa-phone highlight2" aria-hidden="true"></i>
+										</div>
+										<div class="media-body media-middle grey">
+											01 123 456 789
+										</div>
+									</div>
+									<br>
+									<div class="media small-teaser inline-block margin_0">
+										<div class="media-left media-middle">
+											<i class="fa fa-map-marker highlight2" aria-hidden="true"></i>
+										</div>
+										<div class="media-body media-middle highlightlinks">
+											<a href="#">gogreen@support.com</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="darklinks topmargin_20">
+									<a href="#" class="social-icon border-icon rounded-icon soc-facebook"></a>
+									<a href="#" class="social-icon border-icon rounded-icon soc-twitter"></a>
+									<a href="#" class="social-icon border-icon rounded-icon soc-google"></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 text-center">
+							<div class="widget widget_contact topmargin_10">
+								<h3>Contact Form</h3>
+								<form class="contact-form topmargin_45" method="post" action="http://webdesign-finder.com/html/gogreen/">
+									<p class="contact-form-name">
+							<label for="footer-name">Name <span class="required">*</span></label>
+							<input type="text" aria-required="true" size="30" value="" name="name" id="footer-name" class="form-control text-center" placeholder="Full Name">
+						</p>
+									<p class="contact-form-email">
+							<label for="footer-email">Email <span class="required">*</span></label>
+							<input type="email" aria-required="true" size="30" value="" name="email" id="footer-email" class="form-control text-center" placeholder="Email Address">
+						</p>
+									<p class="contact-form-message">
+							<label for="footer-message">Message</label>
+							<textarea aria-required="true" rows="3" cols="45" name="message" id="footer-message" class="form-control text-center" placeholder="Message"></textarea>
+						</p>
+									<p class="footer_contact-form-submit topmargin_30">
+							<button type="submit" id="footer_contact_form_submit" name="contact_submit" class="theme_button color1 wide_button">Send Message</button>
+						</p>
+								</form>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 text-center">
+
+							<div class="widget widget_recent_entries topmargin_10">
+
+								<h3 class="widget-title">Recent News</h3>
+								<ul class="greylinks">
+									<li>
+										<p class="margin_0">
+								<a href="blog-single-right.html">
+									At vero eos et accusam et justo duo dolores et ea rebum clita kasd
+								</a>
+							</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+												March 9, 2017
+											</time>
+										</span>
+									</li>
+									<li>
+										<p class="margin_0">
+								<a href="blog-single-right.html">
+									Gubergren, no sea takimata sanctus est lorem ipsum dolor sit amet
+								</a>
+							</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+												March 9, 2017
+											</time>
+										</span>
+									</li>
+									<li>
+										<p class="margin_0">
+								<a href="blog-single-right.html">
+									Lorem ipsum dolor sit amet, consetetur
+								</a>
+							</p>
+										<span class="entry-date highlight">
+											<time class="entry-date" datetime="2017-03-13T08:50:40+00:00">
+												March 9, 2017
+											</time>
+										</span>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<section class="ls page_copyright section_padding_15">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text small-spacing grey">&copy; Copyright 2017 All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+	<!-- Google Map Script -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
+</body>
+
+
+<!-- Mirrored from webdesign-finder.com/html/gogreen/index_static.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Oct 2020 04:11:46 GMT -->
+</html>
